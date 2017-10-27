@@ -93,7 +93,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/likeabee/blog_picture/master/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/hexo%E5%8D%9A%E6%96%87/%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/likeabee/blog_picture/master/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/hexo%E5%8D%9A%E6%96%87/%E9%98%BF%E9%87%8C%E4%BA%91.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/likeabee/blog_picture/master/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/hexo%E5%8D%9A%E6%96%87/CNAME%E8%AE%B0%E5%BD%95.png">
-<meta property="og:updated_time" content="2017-10-26T10:00:16.000Z">
+<meta property="og:updated_time" content="2017-10-27T06:36:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo博客搭建">
 <meta name="twitter:description" content="hexo + github + 个人域名 = 个人博客 基于hexo的博客快速搭建——教程向   既然在上一篇的博客中提到了要带来一个hexo的文章，那么现在我来填坑了：） So, ready? &amp;lt;(￣︶￣)↗[GO!]搭建博客基本方式： WordPress GitHubPages+Jekyll GitHubPages+HexoWordPress我也没有接触过，不过据说一般需要独立域名，并且">
@@ -363,16 +363,20 @@
 <p>首先，当然是先去<a href="www.github.com">github</a>创建仓库啦（如果你没有github账号，请先注册~）<br><img src="https://raw.githubusercontent.com/likeabee/blog_picture/master/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/hexo%E5%8D%9A%E6%96%87/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt="@github创建仓库 | center | 150x80"><br>这里的仓库名就填<strong>your_username.github.io</strong>就好了<br><img src="https://raw.githubusercontent.com/likeabee/blog_picture/master/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/hexo%E5%8D%9A%E6%96%87/%E4%BB%93%E5%BA%93%E5%90%8D.png" alt="@仓库名称 | center | 300x50"></p>
 <blockquote>
 <p>需要注意的时，这里的仓库名的写法是固定的，必须是username.github.io！（username就是前面那个<em>Owner</em>）比如我的就必须是likeabee.github.io，否则一会跑起来的时候可能会404…</p>
+</blockquote>
 <h2 id="then"><a href="#then" class="headerlink" title="then"></a>then</h2><hr>
 <p> 然后，当然是装环境咯</p>
 <ul>
 <li><strong>git安装</strong><br>我的系统是mac OS，mac环境下是自带git的（只要你装了Xcode…）<br>Windows的话请自行<a href="https://git-scm.com/download/" target="_blank" rel="external">安装git</a></li>
 <li><strong>Nodejs安装</strong><br>不论是Windows还是macOS，都可以去官网下载<a href="https://nodejs.org/en/download/" target="_blank" rel="external">Nodejs安装</a></li>
-<li><strong>hexo安装</strong><br>使用命令行npm工具安装（Node Package Manager）<br><strong>注意：</strong>由于npm的源在国外，受到天朝万里长城的影响，国内用户使用起来可能速度堪忧，建议使用国内的镜像资源，速度会有大幅提升（<em>如果已经实现科学上网请自动忽略</em>）</li>
-</ul>
+<li><p><strong>hexo安装</strong><br>使用命令行npm工具安装（Node Package Manager）</p>
+<blockquote>
+<p><strong>注意：</strong>由于npm的源在国外，受到天朝万里长城的影响，国内用户使用起来可能速度堪忧，建议使用国内的镜像资源，速度会有大幅提升（<em>如果已经实现科学上网请自动忽略</em>）</p>
 </blockquote>
-<p> <em>先执行命令安装cnpm：</em><br> <code>$ npm install -g cnpm --registry=https://registry.npm.taobao.org</code><br><em>然后使用cnpm安装（适用于其他用npm安装的操作）：</em><br><code>$ cnpm install hexo-cli -g</code></p>
-<h2 id="next"><a href="#next" class="headerlink" title="next"></a>next</h2><hr>
+<p><em>先执行命令安装cnpm：</em><br><code>$ npm install -g cnpm --registry=https://registry.npm.taobao.org</code><br><em>然后使用cnpm安装（适用于其他用npm安装的操作）：</em><br><code>$ cnpm install hexo-cli -g</code></p>
+<h2 id="next"><a href="#next" class="headerlink" title="next"></a>next</h2></li>
+</ul>
+<hr>
 <p> 接下来，当然就是创建本地博客的目录啦</p>
 <ul>
 <li><strong>本地目录创建</strong><br>cd到你想要放置博客的目录下，大概像这样：<br><img src="https://raw.githubusercontent.com/likeabee/blog_picture/master/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/hexo%E5%8D%9A%E6%96%87/cd%E6%93%8D%E4%BD%9C.png" alt="@cd示例 | center | 300x100"><br>执行hexo初始化命令：<br><code>hexo init username.github.io // username就是你建仓库时候的用户名</code></li>
@@ -397,8 +401,11 @@
 <p>  <strong>congratulations！</strong>你现在可以访问username.github.io来观看效果了</p>
 <blockquote>
 <p>如果在部署三部曲中出错了，别急，看看报错信息，尝试去看懂错误出在哪了，然后修复就好了，实在不行就去百度，最后就是删除配置文件重新来了</p>
+</blockquote>
 <h2 id="additional-content"><a href="#additional-content" class="headerlink" title="additional content"></a>additional content</h2><hr>
-<p> 好了，那么博客基本已经搭建好了，接下来就要开始写文章咯<br> 我的写作方式是<a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin" target="_blank" rel="external">markdown</a>，你要用什么是你的事，我不管:)<br> 这里我讲一下关于hexo的命令操作：<br><code>$ hexo new page xxx</code><em>这条命令会在source文件夹（不是themes里面主题下的source）下生成一个名为xxx的文件夹，文件夹里有一个index.md</em>…= =…怎么说呢，这不是你写的文章，而是点击菜单栏时出现的页面，比如说菜单栏里有个tags，执行<code>$ hexo new page tags</code>并部署以后，你点击tags（标签）按钮出现的就是刚刚生成./source/tags/index.md的内容了<br><code>$ hexo new xxx</code><em>这条命令才是真正意义上的写文章时执行的命令，执行完后，在source/_posts文件夹下生成一个同名xxx.md文件。</em>你可以在这个md文件中写文章咯！<br><strong>其他的请自己百度，谢谢(不想写了)</strong></p>
+<p> 好了，那么博客基本已经搭建好了，接下来就要开始写文章咯<br> 我的写作方式是<a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin" target="_blank" rel="external">markdown</a>，你要用什么是你的事，我不管:)<br> 这里我讲一下关于hexo的命令操作：<br><code>$ hexo new page xxx</code><em>这条命令会在source文件夹（不是themes里面主题下的source）下生成一个名为xxx的文件夹，文件夹里有一个index.md</em>…= =…怎么说呢，这不是你写的文章，而是点击菜单栏时出现的页面，比如说菜单栏里有个tags，执行<code>$ hexo new page tags</code>并部署以后，你点击tags（标签）按钮出现的就是刚刚生成./source/tags/index.md的内容了<br><code>$ hexo new xxx</code><em>这条命令才是真正意义上的写文章时执行的命令，执行完后，在source/_posts文件夹下生成一个同名xxx.md文件。</em>你可以在这个md文件中写文章咯！</p>
+<blockquote>
+<p><strong>其他的请自己百度，谢谢(不想写了)</strong></p>
 </blockquote>
 <h2 id="说好的域名绑定"><a href="#说好的域名绑定" class="headerlink" title="说好的域名绑定"></a>说好的域名绑定</h2><hr>
 <p>最后一件事，如果你想绑定域名，请先去买个域名吧，一般首年是有优惠的，非常便宜—&gt;<a href="https://www.aliyun.com/" target="_blank" rel="external">阿里云</a><br>进入<a href="https://home.console.aliyun.com/new#/" target="_blank" rel="external">控制台</a>后：<br><img src="https://raw.githubusercontent.com/likeabee/blog_picture/master/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/hexo%E5%8D%9A%E6%96%87/%E9%98%BF%E9%87%8C%E4%BA%91.png" alt="@阿里云控制台 | center | "><br>域名可以直接在这里注册（良心做广告…马爸爸有没有赞助的）</p>
@@ -407,10 +414,16 @@
 </blockquote>
 <p>OK，可以去添加解析记录了，不用我说去哪解析了吧…<br><strong>具体解析记录要添加哪几条及如何填写请百度一下</strong></p>
 <blockquote>
-<p>将域名指向另一个域名，实现两个域名访问相同效果的使用的是CNAME记录！显然，我们的xxx.github.io与域名的关联很符合这种模式…<br><img src="https://raw.githubusercontent.com/likeabee/blog_picture/master/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/hexo%E5%8D%9A%E6%96%87/CNAME%E8%AE%B0%E5%BD%95.png" alt="@CNAME记录 | center |"><br>走，去试试访问域名，没猜错的话应该404了吧（笑<br>很简单你只需要在github的仓库中建一个CNAME的文件，把你的域名输进去就好了<br>…什么？…不会?……<br>在source文件夹下（是哪个source自己想…）新建一个CANME文件，<strong>没有后缀</strong>！然后编辑器打开，输入你的域名，保存，然后重新部署一遍就好了！<br>其实在github上直接建一个CANME文件输入域名也是ok的，但是这里不推荐，因为一旦重新部署了hexo上传时会把github上的项目文件覆盖一遍（你本地并没有CANME文件）这样，CNAME就消失了…除非你熟悉git操作，先把线上的代码fetch下来再push你的修改…不说了…</p>
+<p>将域名指向另一个域名，实现两个域名访问相同效果的使用的是CNAME记录！显然，我们的xxx.github.io与域名的关联很符合这种模式…</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/likeabee/blog_picture/master/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/hexo%E5%8D%9A%E6%96%87/CNAME%E8%AE%B0%E5%BD%95.png" alt="@CNAME记录 | center |"><br>走，去试试访问域名，没猜错的话应该404了吧（笑<br>很简单你只需要在github的仓库中建一个CNAME的文件，把你的域名输进去就好了<br>…什么？…不会?……<br>在source文件夹下（是哪个source自己想…）新建一个CANME文件，<strong>没有后缀</strong>！然后编辑器打开，输入你的域名，保存，然后重新部署一遍就好了！</p>
+<blockquote>
+<p>其实在github上直接建一个CANME文件输入域名也是ok的，但是这里不推荐，因为一旦重新部署了hexo上传时会把github上的项目文件覆盖一遍（你本地并没有CANME文件）这样，CNAME就消失了…除非你熟悉git操作，先把线上的代码fetch下来再push你的修改…不说了…</p>
+</blockquote>
 <h3 id="没有问题了以后，访问你的域名现在已经是OK了的"><a href="#没有问题了以后，访问你的域名现在已经是OK了的" class="headerlink" title="没有问题了以后，访问你的域名现在已经是OK了的"></a>没有问题了以后，访问你的域名现在已经是OK了的</h3><p>不用谢我，我的支付宝账号是……<br>但是有些有灵性的小伙伴就会问了，为什么我在搜索引擎上搜不到我的博客咧？</p>
 <h3 id="good！可以说是verygood了"><a href="#good！可以说是verygood了" class="headerlink" title="good！可以说是verygood了"></a>good！可以说是verygood了</h3><p>点个赞先！<br>那么为什么呢？因为你的网站还没有被搜索引擎收录啊（mmp）<br><strong>这里以百度和谷歌举例</strong><br>…时间来不及了<br>预知后事如何，请听下回因式分解…<br>溜了溜了…</p>
-</blockquote>
+<hr>
+<p>回来以后懒得写了…<br>…<br>简单说下吧，谷歌使用search console上传站点就好了（开始可能会有文件验证，如果一直失败，可能是因为hexo自动编译了你放置的html文件，需要你控制它不去编译或者直接去github上修改验证文件）<br>百度的话…就比较麻烦了…因为github禁止了百度爬虫去爬取内容，在提交baidusitemap.xml的时候一直提示抓取失败（403）这个没办法解决，需要让百度<strong>去另一个地方爬取与github仓库中一样的内容</strong>…自己体会…自己百度一下或者谷歌一下（记得找近期的资料）<br>…<br>溜了溜了…</p>
 
       
     </div>
