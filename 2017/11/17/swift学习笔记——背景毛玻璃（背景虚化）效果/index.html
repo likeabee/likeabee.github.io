@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="swift," />
 
 
 
@@ -82,16 +82,18 @@
 
 
 
-<meta name="description" content="你在这里想看到什么，这不是我关心的，我只是像颗蜂的记录员而已">
-<meta property="og:type" content="website">
-<meta property="og:title" content="likeabee&#39;s blog">
-<meta property="og:url" content="http://likeabee.cn/tags/教程/index.html">
+<meta name="description" content="(⊙﹏⊙)b…一晃已经两周过去了，好久没有update心有点慌水一发…  在ios开发中，用户体验设计与优化一直是非常被重视的一项（如果你的APP不是用户刚需，需要通过良好的用户体验来增加黏性的话…）  所以今天带来一个非常简单但是极其实用的swift学习内容… 毛玻璃（背景模糊）效果想要实现这个效果，其实原理非常简单！就是在已有的背景“图层”（或者说view）上方覆盖一个滤镜“图层”，所以…no">
+<meta name="keywords" content="swift">
+<meta property="og:type" content="article">
+<meta property="og:title" content="swift学习笔记——背景毛玻璃（背景虚化）效果">
+<meta property="og:url" content="http://likeabee.cn/2017/11/17/swift学习笔记——背景毛玻璃（背景虚化）效果/index.html">
 <meta property="og:site_name" content="likeabee&#39;s blog">
-<meta property="og:description" content="你在这里想看到什么，这不是我关心的，我只是像颗蜂的记录员而已">
+<meta property="og:description" content="(⊙﹏⊙)b…一晃已经两周过去了，好久没有update心有点慌水一发…  在ios开发中，用户体验设计与优化一直是非常被重视的一项（如果你的APP不是用户刚需，需要通过良好的用户体验来增加黏性的话…）  所以今天带来一个非常简单但是极其实用的swift学习内容… 毛玻璃（背景模糊）效果想要实现这个效果，其实原理非常简单！就是在已有的背景“图层”（或者说view）上方覆盖一个滤镜“图层”，所以…no">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-17T01:31:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="likeabee&#39;s blog">
-<meta name="twitter:description" content="你在这里想看到什么，这不是我关心的，我只是像颗蜂的记录员而已">
+<meta name="twitter:title" content="swift学习笔记——背景毛玻璃（背景虚化）效果">
+<meta name="twitter:description" content="(⊙﹏⊙)b…一晃已经两周过去了，好久没有update心有点慌水一发…  在ios开发中，用户体验设计与优化一直是非常被重视的一项（如果你的APP不是用户刚需，需要通过良好的用户体验来增加黏性的话…）  所以今天带来一个非常简单但是极其实用的swift学习内容… 毛玻璃（背景模糊）效果想要实现这个效果，其实原理非常简单！就是在已有的背景“图层”（或者说view）上方覆盖一个滤镜“图层”，所以…no">
 
 
 
@@ -121,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://likeabee.cn/tags/教程/"/>
+  <link rel="canonical" href="http://likeabee.cn/2017/11/17/swift学习笔记——背景毛玻璃（背景虚化）效果/"/>
 
 
 
 
 
-  <title>标签: 教程 | likeabee's blog</title>
+  <title>swift学习笔记——背景毛玻璃（背景虚化）效果 | likeabee's blog</title>
   
 <script>
   window.fbAsyncInit = function() {
@@ -166,7 +168,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -294,54 +296,243 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>教程<small>标签</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://likeabee.cn/2017/11/17/swift学习笔记——背景毛玻璃（背景虚化）效果/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="likeabee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/arya.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="likeabee's blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/11/03/微信公众号后台第三方管理简述/" itemprop="url">
-              
-                <span itemprop="name">微信公众号后台第三方管理简述</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">swift学习笔记——背景毛玻璃（背景虚化）效果</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-03T10:19:26+08:00"
-              content="2017-11-03" >
-          11-03
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-17T09:06:04+08:00">
+                2017-11-17
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习资源/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资源</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/17/swift学习笔记——背景毛玻璃（背景虚化）效果/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://likeabee.cn/2017/11/17/swift学习笔记——背景毛玻璃（背景虚化）效果/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/11/17/swift学习笔记——背景毛玻璃（背景虚化）效果/" class="leancloud_visitors" data-flag-title="swift学习笔记——背景毛玻璃（背景虚化）效果">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>(⊙﹏⊙)b…一晃已经两周过去了，好久没有update心有点慌<br>水一发…</p>
+<blockquote>
+<p>在ios开发中，用户体验设计与优化一直是非常被重视的一项（如果你的APP不是用户刚需，需要通过良好的用户体验来增加黏性的话…）</p>
+</blockquote>
+<p>所以今天带来一个非常简单但是极其实用的swift学习内容…</p>
+<h3 id="毛玻璃（背景模糊）效果"><a href="#毛玻璃（背景模糊）效果" class="headerlink" title="毛玻璃（背景模糊）效果"></a>毛玻璃（背景模糊）效果</h3><p>想要实现这个效果，其实原理非常简单！就是在已有的背景“图层”（或者说view）上方覆盖一个滤镜“图层”，所以…no BB，show me the code…<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">import UIKit</div><div class="line"> </div><div class="line">class ViewController: UIViewController &#123;</div><div class="line"> </div><div class="line">    override func viewDidLoad() &#123;</div><div class="line">        super.viewDidLoad()</div><div class="line">         </div><div class="line">        //首先创建一个模糊效果</div><div class="line">        let blurEffect = UIBlurEffect(style: .Light)</div><div class="line">        //接着创建一个承载模糊效果的视图</div><div class="line">        let blurView = UIVisualEffectView(effect: blurEffect)</div><div class="line">        //设置模糊视图的大小（全屏）</div><div class="line">        blurView.frame.size = CGSize(width: view.frame.width, height: view.frame.height)</div><div class="line">        //添加模糊视图到页面view上（模糊视图下方都会有模糊效果）</div><div class="line">        self.view.addSubview(blurView)</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    override func didReceiveMemoryWarning() &#123;</div><div class="line">        super.didReceiveMemoryWarning()</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>从代码中可以看到这里使用的是UIBlurEffect()这个类，在iOS8中，SDK直接提供了这一方法，大家只需要直接拿来用就好了…<br>一般在使用过程中，都是在底部放一个imageView（挑个稍微好看点的图片放进去当背景图片），然后在上面添加一层<strong>模糊视图</strong>，最后再加上需要模糊化的主要界面内容…<br>另外这个UIBlurEffect()有三种效果：.Light ; .ExtraLight ; .Dark<br>…<br>自己去探索下吧…<br>尊重原创：这里有许多优秀的学习资源大家有兴趣可以一观——<a href="http://www.hangge.com/blog/cache/detail_1135.html" target="_blank" rel="external">航歌 - 做最好的开发者知识平台</a><br>…<br>是不是感觉发现了新大陆…<br>可能以后没有人来我这里了…<br>孤独终老…</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>感谢各位大佬，感激涕零</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="likeabee 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="likeabee 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/swift/" rel="tag"># swift</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+          <div class="social-like">
+            
+
+            
+              <div class="fb_like">
+                <div class="fb-like" data-layout="button_count" data-share="true"></div>
+              </div>
+            
+          </div>
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/03/微信公众号后台第三方管理简述/" rel="next" title="微信公众号后台第三方管理简述">
+                <i class="fa fa-chevron-left"></i> 微信公众号后台第三方管理简述
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -349,6 +540,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div class="fb-comments"
+           data-href="http://likeabee.cn/2017/11/17/swift学习笔记——背景毛玻璃（背景虚化）效果/"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -369,8 +574,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -476,6 +690,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#毛玻璃（背景模糊）效果"><span class="nav-number">1.</span> <span class="nav-text">毛玻璃（背景模糊）效果</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -617,6 +847,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
