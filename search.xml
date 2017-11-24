@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ios-objective-c学习笔记]]></title>
+    <url>%2F2017%2F11%2F24%2Fios-objective-c%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[额…暂时没有东西可以拿来更新了…那就拿一直都在不定期更新的学习笔记来“滥竽充数”下吧… 所以这会是一篇长期更新的文章啊…记得常回家看看！ objective-cios开发使用的语言有两种：objective-c和swift…blabla…此处省略？字（这些没必要说好像）好了，相信大家对ios开发和objective-c有了一个初步的了解…：）不开玩笑了，说起ios开发，不管是objective-c还是swift，必须要提一下的是MVC MVC设计模式 如果觉得自己已经深刻理解了MVC设计模式，请遮住不要看…我怕我说错了你们来打我… MVC，当然了就是model、view、controller，这些我估计大家应该都知道了，我就直接讲一讲ios开发大环境下的大家可能不太了解的东西的吧？ MVC这三者的通信关系情况想必大家都清楚了…controller比较吊，能向其它两个发出通信。而view想和MVC进行通信需要通过一种特殊的方式（协议代理、数据源），同样的，model想和controller进行通信也需要通过一种特殊的方式（广播通知）举个栗子说明在MVC中，协议（protocol）是一种同另一对象通信的盲方式，这也是oc种做代理（delegation）的方式，（在view中发生较为复杂的动作时使用，即action-target模式无法满足，常伴随will、should、did这些关键词，view无法解释这些行为于是产生delegate）数据源（DataSource）也是一种特殊的delegate，DataSource不会考虑will、should、did，但是它被要求做一些类似于count的工作（view不应该拥有它所展示的数据，需要DataSource来代理这些问题，比如一个播放器DataSource会计算model中有多少歌曲，然后反馈给view，view就能在显示时预留出位置，当你开始向下滚动，DataSource知道后向model索取相应的歌曲信息，再反馈给view用于显示）这是一种结构化的盲的方式。所以，controller的动作就是为view解释并格式化提供model中的数据那么model中的数据发生变化，controller需要知道这一变化，model又无法直接与controller进行通信，于是就需要一种“电台模式”的通信方法（Notification&amp;KVO，key value observing）model会使用这一概念进行广播信息（即通知，一个对象给多个对象发送消息）然后controller接收到来自电台的信息，了解到有数据正在发生变化，于是向model发送消息要求报告变化的数据。]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>objective-c</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[swift学习笔记——背景毛玻璃（背景虚化）效果]]></title>
     <url>%2F2017%2F11%2F17%2Fswift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%83%8C%E6%99%AF%E6%AF%9B%E7%8E%BB%E7%92%83%EF%BC%88%E8%83%8C%E6%99%AF%E8%99%9A%E5%8C%96%EF%BC%89%E6%95%88%E6%9E%9C%2F</url>
     <content type="text"><![CDATA[(⊙﹏⊙)b…一晃已经两周过去了，好久没有update心有点慌水一发… 在ios开发中，用户体验设计与优化一直是非常被重视的一项（如果你的APP不是用户刚需，需要通过良好的用户体验来增加黏性的话…） 所以今天带来一个非常简单但是极其实用的swift学习内容… 毛玻璃（背景模糊）效果想要实现这个效果，其实原理非常简单！就是在已有的背景“图层”（或者说view）上方覆盖一个滤镜“图层”，所以…no BB，show me the code…123456789101112131415161718192021import UIKit class ViewController: UIViewController &#123; override func viewDidLoad() &#123; super.viewDidLoad() //首先创建一个模糊效果 let blurEffect = UIBlurEffect(style: .Light) //接着创建一个承载模糊效果的视图 let blurView = UIVisualEffectView(effect: blurEffect) //设置模糊视图的大小（全屏） blurView.frame.size = CGSize(width: view.frame.width, height: view.frame.height) //添加模糊视图到页面view上（模糊视图下方都会有模糊效果） self.view.addSubview(blurView) &#125; override func didReceiveMemoryWarning() &#123; super.didReceiveMemoryWarning() &#125;&#125; 从代码中可以看到这里使用的是UIBlurEffect()这个类，在iOS8中，SDK直接提供了这一方法，大家只需要直接拿来用就好了…一般在使用过程中，都是在底部放一个imageView（挑个稍微好看点的图片放进去当背景图片），然后在上面添加一层模糊视图，最后再加上需要模糊化的主要界面内容…另外这个UIBlurEffect()有三种效果：.Light ; .ExtraLight ; .Dark…自己去探索下吧…尊重原创：这里有许多优秀的学习资源大家有兴趣可以一观——航歌 - 做最好的开发者知识平台…是不是感觉发现了新大陆…可能以后没有人来我这里了…孤独终老…]]></content>
